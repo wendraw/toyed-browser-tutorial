@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body div #myid {
-            width: 100px;
-            background-color: #ff5000;
+        #container {
+            width: 400px;
+            height: 300px;
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: rgb(255, 68, 68);
         }
 
-        body div .img.img2 {
-            width: 30px;
-            background-color: #ff1111;
+        #container #myid {
+            width: 300px;
+            height: 100px;
+            background-color: rgb(127, 255, 212);
+        }
+
+        #container #myid2 {
+            width: 200px;
+            height: 100px;
+            background-color: rgb(255, 255, 100);
+        }
+
+        #container .c1 {
+            flex: 1;
+            background-color: rgb(255, 228, 196);
         }
     </style>
 </head>
 
-<body maaa=a>
-    <div>
-        aaaaaaa
-        <img id="myid" />
-        <img class=" img img2 img3" />
+<body>
+    <div id="container">
+        <div id="myid"></div>
+        <div id="myid2"></div>
+        <div class="c1"></div>
     </div>
 </body>
 
